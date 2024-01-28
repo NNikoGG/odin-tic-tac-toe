@@ -15,6 +15,7 @@ const Gameboard = (() => {
         gameboard.forEach((square, index) => {
             boardHTML += `<div class="square" id="square-${index}">${square}</div>`
         })
+        document.querySelector(".game-area").style.display = "grid";
         document.querySelector(".game-area").innerHTML = boardHTML;
         const squares = document.querySelectorAll(".square")
         squares.forEach((square) => {
