@@ -67,6 +67,7 @@ main{
     display: grid;
     border: 1px solid var(--black);
     place-items: center;
+    place-content: center;
     width: 100px;
     height: 100px;
     text-align: center;
