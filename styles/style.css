@@ -31,7 +31,6 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 150px);
 }
 
 .game-area{
@@ -72,4 +71,11 @@ main{
     height: 100px;
     text-align: center;
     font-size: 80px;
+}
+
+.message{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    text-align: center;
 }
