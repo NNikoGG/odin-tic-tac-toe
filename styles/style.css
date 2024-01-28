@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --green: hsl(145, 100%, 45%);
+    --red: #ff4b4b;
+    --white: #ffffff;
+    --grey: #e2e8f0;
+    --black: #121212;
+    --lightblack: hsl(0, 0%, 20%);
+    --shadow: rgba(0, 0, 0, 0.50) 0px 1px 4px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+header{
+    height: 150px;
+    font-size: 80px;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    background-color: var(--red);
+    color: var(--white);
+    box-shadow: var(--shadow)
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 150px);
+}
+
+.game-area{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    height: 500px;
+}
+
+.user-inputs-container{
+    background-color: var(--grey);
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* .square{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    border: 1px solid var(--black);
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 30%;
+    text-align: center;
+    font-size: 80px;
+} */
+
+.square{
+    display: grid;
+    border: 1px solid var(--black);
+    place-items: center;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 80px;
+}
